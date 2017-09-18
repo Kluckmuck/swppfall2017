@@ -23,7 +23,10 @@ class JsonCrawler(threading.Thread):
         self.queue = Queue()
 
         # TODO: initialize instance variables
-        # self.active = active
+        self.url = url
+        self.name = name
+        self.period = period
+        self.active = active
 
         self.start()
 
